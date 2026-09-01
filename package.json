@@ -1,0 +1,31 @@
+{
+    "name": "young-heroes",
+    "version": "2.0.0",
+    "description": "Young Heroes - a playful bilingual learning world for kids (maths, words, spelling and listening).",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js",
+        "set-key": "node set-key.mjs"
+    },
+    "keywords": [
+        "kids",
+        "education",
+        "math",
+        "language",
+        "arabic",
+        "game"
+    ],
+    "license": "MIT",
+    "dependencies": {},
+    "engines": {
+        "node": ">=18"
+    },
+    "devDependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2"
+    },
+    "private": true
+}

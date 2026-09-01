@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4c6ef5">
+    <meta name="description" content="Young Heroes - a playful learning world for kids: maths, words, spelling and listening in English and Arabic.">
+    <title>Young Heroes — Learn. Play. Level up.</title>
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/games.css">
+</head>
+
+<body>
+    <!-- Animated world background -->
+    <div id="world-bg" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
+        <div class="hills"></div>
+        <div class="bubbles" id="bubbles"></div>
+    </div>
+
+    <!-- Particle / confetti layer -->
+    <canvas id="fx-canvas" aria-hidden="true"></canvas>
+
+    <!-- Top bar -->
+    <header id="topbar" class="hidden">
+        <button class="chip chip-hero" id="heroChip" title="Your hero">
+            <span class="chip-avatar" id="chipAvatar">🦸</span>
+            <span class="chip-text">
+                <b id="chipName">Hero</b>
+                <small id="chipLevel">Level 1</small>
+            </span>
+        </button>
+
+        <div class="xp-wrap" title="Experience">
+            <div class="xp-bar">
+                <div class="xp-fill" id="xpFill"></div>
+            </div>
+            <span class="xp-text" id="xpText">0 / 100 XP</span>
+        </div>
+
+        <button class="chip chip-coins" id="coinChip" title="Coins">
+            <span class="coin-icon">🪙</span><b id="coinCount">0</b>
+        </button>
+
+        <div class="topbar-tools">
+            <button class="icon-btn" id="btnSound" title="Sound effects">🔊</button>
+            <button class="icon-btn" id="btnMusic" title="Music">🎵</button>
+            <button class="icon-btn lang-btn" id="btnLang" title="Language">ع</button>
+            <button class="icon-btn" id="btnHome" title="World map">🗺️</button>
+        </div>
+    </header>
+
+    <!-- Every screen renders here -->
+    <main id="screen" class="screen"></main>
+
+    <!-- Mascot buddy -->
+    <div id="mascot" class="mascot hidden">
+        <div class="mascot-bubble" id="mascotBubble" dir="auto"></div>
+        <div class="mascot-body" id="mascotBody">🦊</div>
+    </div>
+
+    <div id="toast-layer"></div>
+    <div id="modal-layer"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/fx.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/mathai.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/games/addition.js"></script>
+    <script src="js/games/subtraction.js"></script>
+    <script src="js/games/multiplication.js"></script>
+    <script src="js/games/numbers.js"></script>
+    <script src="js/games/wordmatch.js"></script>
+    <script src="js/games/translate.js"></script>
+    <script src="js/games/spelling.js"></script>
+    <script src="js/games/listening.js"></script>
+    <script src="js/screens.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
