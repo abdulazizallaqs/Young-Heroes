@@ -2,7 +2,6 @@
     "name": "young-heroes",
     "version": "2.0.0",
     "description": "Young Heroes - a playful bilingual learning world for kids (maths, words, spelling and listening).",
-    "main": "server.js",
     "type": "module",
     "scripts": {
         "start": "node server.js",
